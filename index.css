@@ -1,0 +1,104 @@
+html {
+    font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 16px;
+}
+
+.apologizeToScreenReaders {
+    font-size: 0;
+}
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.button {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.button a {
+    padding: 9px 20px 11px 20px;
+    border-radius: 10px;
+    background-color: #111;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 1s;
+    box-shadow: 0 0 #111;
+}
+.button a:hover {
+    box-shadow: 2px 2px #333;
+    background-color: #333;
+}
+
+.button a .icon {
+    display: inline-block;
+    padding-right: 20px;
+    transform: translateY(-1px);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.item {
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.publicity {
+    margin: 0;
+    border-radius: 1000px;
+    padding: 3px 8px;
+    border: 1px solid #aaa;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+.publicity img {
+    height: 13px;
+    vertical-align: -2px;
+    padding-right: 2px;
+}
+
+.item a img {
+    height: 13px;
+    vertical-align: -2px;
+}
+
+.footer {
+    background-color: #fafafa;
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    margin-left: -21px;
+    margin-right: -21px;
+    margin-bottom: -21px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    margin-top: auto;
+}
+.content {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    min-height: 6em;
+    overflow-wrap: break-word;
+}
+
+@media (width >= 800px) {
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
