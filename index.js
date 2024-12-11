@@ -34,7 +34,7 @@ const getIdeaHTML = (idea) => {
             <a href="https://bsky.app/intent/compose?text=${ encodeURIComponent(content) }"><img src="bsky.svg"/></a>
             <p class="content">${ content }</p>
         </div>
-        <p class="footer">${ month } ${ day }, ${ year } &middot; ${ author }</p>
+        <p class="footer">${ month } ${ day }, ${ year }</p>
     `;
     const div = document.createElement('div');
     div.classList.add('item');
